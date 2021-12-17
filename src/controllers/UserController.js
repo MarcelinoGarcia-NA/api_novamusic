@@ -20,7 +20,7 @@ module.exports = {
         if (await User.findOne({ email: req.body.email })) {
             return res.status(400).json({ error: "Usuário já encontrado na base de dados!" });
         }
-        /
+        
         /*const client = require('twilio')(accountSid, authToken);
         const numbersent="+55-"+ req.body.link_whats;
         client.messages.create({
