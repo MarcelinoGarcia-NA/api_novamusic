@@ -20,13 +20,14 @@ module.exports = {
         if (await User.findOne({ email: req.body.email })) {
             return res.status(400).json({ error: "Usuário já encontrado na base de dados!" });
         }
-        const client = require('twilio')(accountSid, authToken);
+        /
+        /*const client = require('twilio')(accountSid, authToken);
         const numbersent="+55-"+ req.body.link_whats;
         client.messages.create({
         to: numbersent,
         from: "+19282125624",
         body: 'AGORA VOCÊ É USUÁRIO NOVAMUSIC! BORA MOSTRAR SEU TALENTO!'
-        }).catch(err => console.log(err));
+        }).catch(err => console.log(err));*/
 
         var transporter = nodemailer.createTransport(smtpTransport({
             service: 'gmail',
