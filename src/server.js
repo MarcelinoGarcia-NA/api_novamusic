@@ -3,7 +3,6 @@ const mongoose = require("mongoose");
 const routes = require("./routes");
 const cors= require("cors");
 const PORT = process.env.PORT || 3000;
-//mongodb+srv://Mvitor97:mvitor1500@novamusic.ccb86.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
 mongoose.connect("mongodb+srv://marcelino-na:marcelino-na@cluster0.wvw2d.mongodb.net/NovaMusicBD?retryWrites=true&w=majority",{
     useNewUrlParser:true,
     useUnifiedTopology:true,
