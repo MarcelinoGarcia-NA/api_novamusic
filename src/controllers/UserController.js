@@ -106,7 +106,8 @@ module.exports = {
         from: 'novamusicna@gmail.com',
         to:  req.body.email ,
         subject: 'NOVA MUSIC',
-        text: 'código de verificação é :'+ codigo
+        html: '<img src="https://lh3.googleusercontent.com/a-/AOh14GhoVJCc7Joh5HHxaHCBP57zRAyg_9OHVul2FhCK=s288-p-rw-no"></img><h1>SEU CÓDIGO DE RECUPERAR ACESSO NO NOVAMUSIC É :</h1>'+codigo
+        
       };
       
       transporter.sendMail(mailOptions, function(error, info){
