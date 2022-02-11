@@ -7,7 +7,7 @@
     "dev": "node src/server.js"
   },
   "keywords": [],
-  "author": "Marcelino e Cleiton",
+  "author": "Marcelino Garcia",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
