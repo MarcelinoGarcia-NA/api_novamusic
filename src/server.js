@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const routes = require("./routes");
 const cors= require("cors");
 
-mongoose.connect("mongodb+srv://Mvitor97:marcelino@novamusic.ccb86.mongodb.net/?retryWrites=true&w=majority",{
+mongoose.connect("mongodb+srv://mvitor97:mvitor97@cluster0.wvw2d.mongodb.net/NovaMusicBD?retryWrites=true&w=majority",{
     useNewUrlParser:true,
     useUnifiedTopology:true,
     useCreateIndex:true,
