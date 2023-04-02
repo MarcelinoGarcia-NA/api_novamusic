@@ -33,8 +33,13 @@ module.exports = {
             service: 'gmail',
             host: 'smtp.gmail.com',
             auth: {
+              type: 'OAuth2',
               user: 'novamusicna@gmail.com',
-              pass: 'novamusicifms'
+              pass: 'novamusicifms',
+              serviceClient: '113600000000000000000',
+              privateKey: '-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBg...',
+              accessToken: 'ya29.Xx_XX0xxxxx-xX0X0XxXXxXxXXXxX0x',
+              expires: 1484314697598  
             }
           }));
           
